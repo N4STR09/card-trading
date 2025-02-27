@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #7b00ff;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    animation: slideIn 1s ease-in;
+}
+
+.marketplace-container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in;
+    text-align: center;
+}
+
+.marketplace-container h2 {
+    color: #333;
+}
+
+.marketplace-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.marketplace-table th, .marketplace-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.marketplace-table th {
+    background-color: #333;
+    color: white;
+}
+
+.marketplace-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.marketplace-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+#vender {
+    background-color: #7b00ff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+#vender:hover {
+    background-color: #6c2b9e;
+}
