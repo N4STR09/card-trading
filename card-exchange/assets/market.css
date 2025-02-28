@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Lexend', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("../assets/img/background.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    font-family: 'Lexend', sans-serif;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #7b00ff;
+}
+
+main {
+    padding: 150px 20px 20px;
+    text-align: center;
+    animation: slideIn 1s ease-in;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.marketplace-container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.marketplace-container h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.marketplace-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.marketplace-table {
+    width: 90%;
+    border-collapse: separate;
+    border-spacing: 20px;
+    margin-top: 40px;
+    background: white;
+    table-layout: auto;
+    text-align: center;
+}
+
+.marketplace-table th, .marketplace-table td {
+    border: 1px solid #ddd;
+    padding: 20px;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.marketplace-table th {
+    background-color: #333;
+    color: white;
+    font-weight: 600;
+    padding: 25px;
+}
+
+.marketplace-table td {
+    padding: 20px 40px;
+}
+
+.marketplace-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.marketplace-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.marketplace-table td:nth-child(3) {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+#vender {
+    font-family: 'Lexend', sans-serif;
+    background-color: #7b00ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: auto;
+    min-width: 150px;
+    font-size: 16px;
+}
+
+#vender:hover {
+    background-color: #6c2b9e;
+}
